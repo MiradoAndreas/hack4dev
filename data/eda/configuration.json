@@ -1,0 +1,31 @@
+{
+  "seed": 42,
+  "class_events": {
+    "Madrid": 1960,
+    "Amsterdam": 1945
+  },
+  "right_closed_bins": true,
+  "budgets": [
+    5,
+    25,
+    50,
+    100,
+    200
+  ],
+  "features": [
+    "Blue_mean",
+    "Green_mean",
+    "Red_mean",
+    "NIR_mean",
+    "SWIR1_mean",
+    "SWIR2_mean",
+    "NDVI_mean",
+    "NDBI_mean",
+    "MNDWI_mean",
+    "BSI_mean"
+  ],
+  "inputs": {
+    "Madrid": "/home/mirado/hack4dev/Building_Age_Classification/data/madrid_train.parquet",
+    "Amsterdam": "/home/mirado/hack4dev/Building_Age_Classification/data/amsterdam_data.parquet"
+  }
+}

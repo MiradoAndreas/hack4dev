@@ -1,0 +1,6 @@
+samples_per_class,total_adaptation_locations,all_classes_fit_after_reserve,smallest_class_capacity
+5,20,True,2301
+25,100,True,2301
+50,200,True,2301
+100,400,True,2301
+200,800,True,2301
