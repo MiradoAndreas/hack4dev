@@ -12,3 +12,6 @@ data/*.parquet
 
 # Regenerable outputs from preprocessing_age_labels.ipynb
 data/preprocessed_age_labels/
+
+# Generated baseline models, predictions and metrics
+data/baseline/
