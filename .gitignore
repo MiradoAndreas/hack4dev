@@ -19,3 +19,6 @@ data/baseline/
 # Generated nested transfer experiments
 data/transfer_improved/
 data/transfer_alignment/
+
+# Generated evaluation tables, probabilities and figures
+data/evaluation/

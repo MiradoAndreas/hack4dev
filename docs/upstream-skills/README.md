@@ -1,6 +1,6 @@
 # Downloaded preprocessing skill instructions
 
-These are directly readable project copies of upstream skills, retrieved on 2026-11-03 for `preprocessing_age_labels.ipynb`, `baseline.ipynb`, and the transfer experiments (`transfer_improved.ipynb` and `transfer_alignment.ipynb`). The standard installer cannot write the managed, read-only `.agents` directory. These copies are not registered agent-skill installations, and the eleven-skill installation check remains incomplete.
+These are directly readable project copies of upstream skills, retrieved on 2026-11-03 for `preprocessing_age_labels.ipynb`, `baseline.ipynb`, the transfer experiments (`transfer_improved.ipynb` and `transfer_alignment.ipynb`), and `evaluation.ipynb`. The standard installer cannot write the managed, read-only `.agents` directory. These copies are not registered agent-skill installations, and the eleven-skill installation check remains incomplete.
 
 - `scikit-learn/SKILL.md`: K-Dense-AI/scientific-agent-skills, with references used for preprocessing, pipelines, evaluation, and supervised learning.
 - `verification-before-completion/SKILL.md`: obra/superpowers.
