@@ -9,3 +9,6 @@ wheels/
 # Virtual environments
 .venv
 data/*.parquet
+
+# Regenerable outputs from preprocessing_age_labels.ipynb
+data/preprocessed_age_labels/
