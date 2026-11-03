@@ -1,7 +1,7 @@
 [project]
 name = "building-age-classification"
 version = "0.1.0"
-description = "Add your description here"
+description = "Spatial transfer learning for building-age classification from spectral time series."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [

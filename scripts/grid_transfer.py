@@ -280,16 +280,10 @@ def write_report(summary, paired, selections):
               'full candidate/fold scores, selected parameters for every run, inner memberships, '
               'held-out predictions, per-class precision/recall/F1, paired fold differences, hashes, '
               'versions and five demonstration models excluding outer fold 0. Dependencies are unchanged.', '',
-              '## Skills', '',
-              'Web discovery confirmed the [K-Dense scikit-learn skill]'
-              '(https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/scikit-learn/SKILL.md). '
-              'Applied its directly readable copy and model-evaluation/pipeline references in docs/upstream-skills/, '
-              'plus the verification-before-completion instructions. These are not registered .agents installations.', '',
-              'Kassis et al. (2026), Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents. '
-              'https://doi.org/10.48550/arXiv.2609.00065', '',
               'Method reference: [scikit-learn nested cross-validation]'
               '(https://scikit-learn.org/stable/auto_examples/model_selection/plot_nested_cross_validation_iris.html).']
-    (ROOT / 'docs/TRANSFER_GRID_SEARCH_RESULTS.md').write_text('\n'.join(lines) + '\n')
+    (ROOT / 'reports').mkdir(exist_ok=True)
+    (ROOT / 'reports/TRANSFER_GRID_SEARCH_RESULTS.md').write_text('\n'.join(lines) + '\n')
 
 
 if __name__ == '__main__':

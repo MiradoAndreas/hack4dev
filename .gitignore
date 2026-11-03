@@ -23,3 +23,14 @@ data/transfer_grid_search/
 
 # Generated evaluation tables, probabilities and figures
 data/evaluation/
+
+# Regenerable model review and explanation artifacts
+data/model_review/
+
+# Fixed-budget development experiments and frozen candidate artifacts
+data/improvement_25/
+
+# Local development resources and detailed run reports
+.agents/
+reports/
+data/documentation_migration/
