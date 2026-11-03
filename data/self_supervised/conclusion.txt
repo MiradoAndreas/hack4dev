@@ -1,0 +1,4 @@
+SSL + MLP macro F1: 0.5304 ± 0.0254 fold SD. Weighted F1: 0.5473; accuracy: 0.5462.
+Raw MLP macro F1: 0.5339; SSL delta: -0.0035.
+Original RF blend macro F1: 0.5494; SSL delta: -0.0190.
+The learned representation does not improve mean F1 over the raw MLP in this experiment. Retain the original RF blend: this SSL configuration has a lower mean score. This fixed denoising configuration does not establish the performance of all self-supervised methods. Reconstruction quality is not a measure of age discrimination. Source supervision differs from the blend. These spatial folds have already informed project development; they are not an independent test. Fold SD does not quantify the full uncertainty, and touching blocks can retain spatial dependence.
