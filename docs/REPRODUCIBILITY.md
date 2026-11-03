@@ -39,6 +39,20 @@ The four original numbered notebooks are retained under [notebooks/reference](..
 
 ## Command-line experiments and verification
 
+For a live demonstration with the existing saved baseline artifacts:
+
+```bash
+uv run python -m scripts.demo_model
+```
+
+This loads the saved 25/class adaptation, verifies hashes and spatial separation,
+and predicts 5,197 locations in its excluded fold. It prints source-only,
+target-only and blended scores, a recomputed five-fold comparison, class metrics,
+a confusion matrix and eight fixed random examples. The blend does not beat
+target-only on every fold; present both the single-fold outcome and full
+development comparison. This command does not retrain or establish final-test
+performance.
+
 After preprocessing and baseline artifacts exist:
 
 ```bash
