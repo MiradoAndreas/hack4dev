@@ -1,5 +1,23 @@
 # Repository Guidelines
 
+## Agent Skills
+
+See `docs/AGENT_SKILLS.md` for the requested upstream skills, their project
+roles, and installation status. Install at project scope with
+`bash scripts/setup-agent-skills.sh`; check file presence with
+`bash scripts/setup-agent-skills.sh --check`. Once installed, read the relevant
+`.agents/skills/<name>/SKILL.md` before applying a skill. Use exploratory data
+analysis for data audits, scikit-learn for baselines and evaluation, transformers
+for compatible pretrained-model experiments, systematic debugging for failures,
+and verification before completion for evidence-backed completion claims.
+Use pytorch-lightning for optional neural training, shap for model explanations,
+scientific-slides for presentations, huggingface-gradio for optional demos, and
+writing-plans for implementation plans. The user selected huggingface-llm-trainer
+for the requested huggingface-trainer name; use it for explicitly authorized
+TRL/Unsloth jobs, not as the default spectral-data trainer.
+Skill installation alone must not add model runtime dependencies or change the
+notebook workflow. Do not claim a skill is available until discovery is confirmed.
+
 ## Project Structure & Module Organization
 
 This project explores building-age classification using spectral data from Amsterdam and Madrid. The workflow lives in four root-level notebooks: `1-Introduction.ipynb`, `2-Reading_Data.ipynb`, `3-Preprocessing.ipynb`, and `4-Modelling.ipynb`. Follow their numbered order. `METRIC_LEARNING_APPROACH.md` describes a proposed metric-learning approach; the modelling notebook currently uses random forests.
