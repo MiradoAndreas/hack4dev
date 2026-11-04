@@ -49,3 +49,6 @@ data/rf_scratch_blend/
 
 # Nested CatBoost experiment artifacts
 data/catboost_experiment/
+
+# Local TabPFN checkpoint, private labeled contexts and evaluation artifacts
+data/tabpfn_experiment/

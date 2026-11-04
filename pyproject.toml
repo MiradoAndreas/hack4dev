@@ -20,3 +20,6 @@ deep-learning = [
 boosting = [
     "catboost==1.2.10",
 ]
+tabpfn = [
+    "tabpfn==9.2.0",
+]

@@ -16,6 +16,7 @@ A reproducible spectral-data workflow for classifying building age with limited 
 | [Results](docs/RESULTS.md) | Model comparisons, class-level performance and limitations |
 | [Reproduction guide](docs/REPRODUCIBILITY.md) | Environment, execution order, verification and artifacts |
 | [Submission checklist](docs/SUBMISSION.md) | Deliverables, presentation points and outstanding requirements |
+| [TabPFN experiment](docs/TABPFN.md) | Fixed RF–TabPFN-v2 blend: 0.5842 development macro F1 with fewer severe errors |
 | [Research shortlist](docs/MODEL_RESEARCH.md) | Evidence-based next models for the 100-label spatial task |
 | [CatBoost experiment](docs/CATBOOST.md) | Nested spatial selection and CatBoost–neural comparison; 0.5618 macro F1 |
 | [RF + scratch MLP](docs/RF_SCRATCH_BLEND.md) | Fixed ensemble at 0.5664 macro F1, compared with the fine-tuned hybrid |

@@ -1,6 +1,6 @@
 # Research shortlist for the Amsterdam building-age task
 
-Research checked on **4 November 2026**. This is a recommendation report, not a new training experiment. **None of the five proposed procedures has a measured score on this project.** Rankings below are judgments about task fit and practical experiment value, not a prediction of leaderboard order.
+Research checked on **4 November 2026**. This is a recommendation report, not a new training experiment. **At the time of the research, none of the five proposed procedures had a measured score on this project.** A subsequent [public TabPFN-v2 test](TABPFN.md) reached **0.5842 macro F1** with a fixed RF blend; TabPFN-3.5 remains untested. Rankings below are judgments about task fit and practical experiment value, not a prediction of leaderboard order.
 
 The recommended shortlist is **TabPFN, TabICLv2, ExtraTrees, semi-supervised TabDPT, and temporal change-point features combined with the existing classifier**. The first two address the 100-label setting directly; ExtraTrees is a low-cost alternative to the successful RF; TabDPT offers a way to use unlabeled training locations; change-point features address information lost by spectral aggregation.
 

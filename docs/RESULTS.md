@@ -76,6 +76,10 @@ A fixed 50/50 blend of the original RF blend and a Madrid-pretrained, Amsterdam-
 
 Regularized CatBoost with inner spatial selection at 25 Amsterdam labels/class reaches **0.5252 macro F1** target-only and **0.5412** with a fixed Madrid/Amsterdam blend. The fixed CatBoost–fine-tuned-MLP hybrid reaches **0.5618**, below the existing RF–neural hybrid at **0.5679**, with severe-error rates **0.0978 versus 0.0953**. No primary mean-score improvement was obtained. See the [CatBoost report](CATBOOST.md) and [separate score CSV](results/catboost_scores.csv).
 
+## TabPFN-v2 follow-up
+
+The fixed **25% Madrid RF + 25% Amsterdam RF + 50% TabPFN-v2** blend reaches **0.5842 macro F1 ± 0.0174 fold SD** and **0.5931 weighted F1**, compared with **0.5679** macro F1 for the previous RF–fine-tuned-MLP hybrid. Severe errors fall from **0.0953 to 0.0831**. The new blend leads on all five original fold means using the exact same 25/class samples. TabPFN-v2 alone scores **0.5709**. This is the leading measured development candidate in these follow-ups, pending an independent geographic or competition test. The public original v2 checkpoint was tested with four inference estimators on CPU; **TabPFN-3.5 was not tested**. See the [TabPFN report](TABPFN.md), [notebook](../notebooks/experiments/tabpfn_experiment.ipynb) and [separate score CSV](results/tabpfn_scores.csv).
+
 ## Diagnostics and verification
 
 - Shrunk alignment gains **+0.0025 macro F1** at 25/class; its conditional interval **[−0.0050, +0.0090]** includes zero. Its small gain also comes with more severe errors and worse saved fold-0 probability diagnostics.
