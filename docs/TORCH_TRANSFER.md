@@ -46,7 +46,7 @@ The fixed hybrid improves macro F1 over the RF by **+0.0279, +0.00002, +0.0105, 
 
 Fine-tuning improves on frozen features by **+0.0766** and on the matched-low-learning-rate scratch control by **+0.0480**. However, it trails the ordinary-learning-rate scratch control by **−0.0181**. These controls support a benefit from pretrained initialization under the low encoder learning rate, but **do not establish an overall advantage from pretraining over a suitably trained scratch network**. The source-fitted scaler and new architecture also differ from the previous raw MLP.
 
-The hybrid's gain is consistent with complementary prediction errors, but does not identify the cause. We have not tested a matched RF–scratch blend, source-label ablations, harmonization ablations or multiple source seeds. Any such follow-up should be declared before execution, with tuning confined to inner spatial splits.
+The hybrid's gain is consistent with complementary prediction errors, but does not identify the cause. The matched RF–scratch blend is now reported in the [follow-up](RF_SCRATCH_BLEND.md). Source-label ablations, harmonization ablations and multiple source seeds remain untested. Any such follow-up should be declared before execution, with tuning confined to inner spatial splits.
 
 The hybrid raises the severe-error rate from **8.63% to 9.53%**, about **0.90 percentage points**. Its improved macro F1 therefore comes with a meaningful trade-off.
 
@@ -61,6 +61,10 @@ The hybrid raises the severe-error rate from **8.63% to 9.53%**, about **0.90 pe
 | Frozen encoder | 0.5709 | 0.4077 | 0.4128 | 0.4435 |
 
 The hybrid gains most for class 3 and improves classes 1 and 4, while class 2 falls. The exported class table also includes precision, recall and support.
+
+## RF + scratch follow-up
+
+The previously untested fixed RF–scratch blend has now been evaluated at **0.5664 macro F1** versus **0.5679** for the fine-tuned hybrid, with more severe errors (**0.1013 versus 0.0953**). It does not improve the primary mean score. See the [scratch-blend report](RF_SCRATCH_BLEND.md). Multi-seed neural averaging remains untested.
 
 ## Reproduce and inspect
 

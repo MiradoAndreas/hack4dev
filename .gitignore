@@ -43,3 +43,9 @@ data/torch_transfer/
 
 # Complete hybrid notebook training and inference artifacts
 data/hybrid_rf_pytorch/
+
+# Fixed RF plus scratch-MLP experiment
+data/rf_scratch_blend/
+
+# Nested CatBoost experiment artifacts
+data/catboost_experiment/

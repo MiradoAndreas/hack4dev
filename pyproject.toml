@@ -17,3 +17,6 @@ dependencies = [
 deep-learning = [
     "torch==2.15.0",
 ]
+boosting = [
+    "catboost==1.2.10",
+]
