@@ -40,3 +40,6 @@ data/torch_comparison/
 
 # Supervised Madrid-to-Amsterdam PyTorch transfer artifacts
 data/torch_transfer/
+
+# Complete hybrid notebook training and inference artifacts
+data/hybrid_rf_pytorch/

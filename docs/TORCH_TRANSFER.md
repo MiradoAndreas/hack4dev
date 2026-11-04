@@ -64,6 +64,8 @@ The hybrid gains most for class 3 and improves classes 1 and 4, while class 2 fa
 
 ## Reproduce and inspect
 
+For the complete hybrid workflow, run [hybrid_rf_pytorch.ipynb](../notebooks/workflow/hybrid_rf_pytorch.ipynb). It includes all model code, retrains both RF components and the neural network from the preprocessed tables, reproduces spatial evaluation, then exports and reloads a separate 100-label final adaptation bundle with an inference example. No experiment scripts or saved predictions are required.
+
 Open [torch_transfer.ipynb](../notebooks/experiments/torch_transfer.ipynb) for the network, source checkpoint curve, Amsterdam training losses, per-class scores and paired fold differences. [torch_transfer.py](../scripts/torch_transfer.py) contains training and artifact verification. The [score CSV](results/torch_transfer_scores.csv) includes accuracy, balanced accuracy, severe errors and paired mean deltas.
 
 ```bash

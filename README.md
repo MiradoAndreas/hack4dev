@@ -37,6 +37,8 @@ uv.lock           Locked environment
 
 ## Quick start
 
+The complete experimental RF–PyTorch hybrid is in [hybrid_rf_pytorch.ipynb](notebooks/workflow/hybrid_rf_pytorch.ipynb), including training, spatial evaluation, model export and prediction. It requires the preprocessed data and the optional `deep-learning` extra.
+
 ```bash
 uv sync --locked
 uv run --with jupyter jupyter lab
