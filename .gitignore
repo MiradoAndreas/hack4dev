@@ -34,3 +34,9 @@ data/improvement_25/
 .agents/
 reports/
 data/documentation_migration/
+
+# Regenerable matched PyTorch comparison artifacts
+data/torch_comparison/
+
+# Supervised Madrid-to-Amsterdam PyTorch transfer artifacts
+data/torch_transfer/

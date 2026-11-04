@@ -68,6 +68,10 @@ The highest observed 200/class score, **0.6355**, uses 800 target labels. It is 
 
 Context: Madrid RF macro F1 is **0.5755**, versus **0.1313** for the most-frequent dummy. Madrid-to-Amsterdam source-only macro F1 is **0.3462** with zero local labels. These are different evaluation settings, not equal-budget competitors.
 
+## PyTorch transfer follow-up
+
+A fixed 50/50 blend of the original RF blend and a Madrid-pretrained, Amsterdam-fine-tuned MLP reaches **0.5679 macro F1 ± 0.0158 fold SD**, versus **0.5494** for RF on the same original spatial development folds and exact 25/class samples. Weighted F1 is **0.5769**. Severe errors increase from **0.0863 to 0.0953**. The fine-tuned network alone scores **0.5353**, below the new scratch control (**0.5534**); the hybrid gain cannot be attributed specifically to pretraining. Source-label harmonization and source checkpoint holdout differ from the RF procedure. Treat this as a promising experimental candidate pending robustness checks and an untouched test; the original RF remains the conservative recommendation. See the [full transfer report](TORCH_TRANSFER.md) and [separate score table](results/torch_transfer_scores.csv).
+
 ## Diagnostics and verification
 
 - Shrunk alignment gains **+0.0025 macro F1** at 25/class; its conditional interval **[−0.0050, +0.0090]** includes zero. Its small gain also comes with more severe errors and worse saved fold-0 probability diagnostics.

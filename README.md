@@ -16,6 +16,8 @@ A reproducible spectral-data workflow for classifying building age with limited 
 | [Results](docs/RESULTS.md) | Model comparisons, class-level performance and limitations |
 | [Reproduction guide](docs/REPRODUCIBILITY.md) | Environment, execution order, verification and artifacts |
 | [Submission checklist](docs/SUBMISSION.md) | Deliverables, presentation points and outstanding requirements |
+| [Madrid pretraining and fine-tuning](docs/TORCH_TRANSFER.md) | Fixed RF–neural hybrid reaches 0.5679 development macro F1; trade-offs and controls |
+| [PyTorch experiments](docs/PYTORCH.md) | Neural model recommendations and matched RF comparisons |
 | [Complete score table](docs/results/all_model_scores.csv) | Machine-readable results for all 64 evaluated configurations |
 
 ## Project layout

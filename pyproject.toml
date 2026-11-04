@@ -12,3 +12,8 @@ dependencies = [
     "pyarrow>=26.0.0",
     "scikit-learn>=1.9.1",
 ]
+
+[project.optional-dependencies]
+deep-learning = [
+    "torch==2.15.0",
+]
